@@ -1,5 +1,7 @@
+import PropertyCardHeader from "./components/PropertyCard/PropertyCardHeader/PropertyCardHeader";
+
 const App = () => {
-  return <div>Learn React</div>;
+  return <PropertyCardHeader />
 };
 
 export default App;
