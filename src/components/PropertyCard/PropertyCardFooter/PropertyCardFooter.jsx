@@ -1,5 +1,7 @@
+import { StyledFooterDiv } from "./PropertyCardFooter.style";
+
 const PropertyCardFooter = () => {
-  return <div></div>;
+  return <StyledFooterDiv>Price: $526,500</StyledFooterDiv>;
 };
 
 export default PropertyCardFooter;

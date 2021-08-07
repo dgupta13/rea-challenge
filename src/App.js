@@ -1,7 +1,7 @@
-import PropertyCardHeader from "./components/PropertyCard/PropertyCardHeader/PropertyCardHeader";
+import PropertyCard from "./components/PropertyCard/PropertyCard";
 
 const App = () => {
-  return <PropertyCardHeader />
+  return <PropertyCard />;
 };
 
 export default App;
