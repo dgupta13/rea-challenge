@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "stubs": "wiremock --port=8081 --global-response-templating --root-dir=./stubs"
+    "stubs": "wiremock --port=5000 --global-response-templating --root-dir=./stubs"
   },
   "eslintConfig": {
     "extends": [
