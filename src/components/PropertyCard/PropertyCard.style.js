@@ -5,5 +5,5 @@ export const StyledContainer = styled.div`
   border-radius: 25px;
   overflow: hidden;
   display: inline-block;
-  width: 15%;
+  width: 12%;
 `;
