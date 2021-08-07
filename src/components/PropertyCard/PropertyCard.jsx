@@ -1,13 +1,18 @@
+import { useState } from "react";
 import PropertyCardContent from "./PropertyCardContent/PropertyCardContent";
 import PropertyCardFooter from "./PropertyCardFooter/PropertyCardFooter";
 import PropertyCardHeader from "./PropertyCardHeader/PropertyCardHeader";
 import { StyledContainer } from "./PropertyCard.style";
 
 const PropertyCard = () => {
+  const [showButton, setShowButton] = useState(false);
   return (
-    <StyledContainer>
+    <StyledContainer
+      onMouseEnter={() => setShowButton(true)}
+      onMouseLeave={() => setShowButton(false)}
+    >
       <PropertyCardHeader />
-      <PropertyCardContent />
+      <PropertyCardContent showButton={showButton} />
       <PropertyCardFooter />
     </StyledContainer>
   );
