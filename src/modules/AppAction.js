@@ -8,8 +8,7 @@ import {
 
 export const getPropertyData = () => {
   return {
-    type: GET_PROPERTY_DATA,
-    payload: "",
+    type: GET_PROPERTY_DATA
   };
 };
 
