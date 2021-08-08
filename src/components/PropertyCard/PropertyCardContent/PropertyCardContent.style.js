@@ -8,6 +8,7 @@ export const StyledContentDiv = styled.div`
     position: absolute;
     border-radius: 50px;
     top: 80%;
+    left: 0;
     width: 100%;
     cursor: pointer;
     color: green;

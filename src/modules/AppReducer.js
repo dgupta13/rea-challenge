@@ -1,7 +1,9 @@
 import {
+  ADD_PROPERTY,
   GET_PROPERTY_DATA,
   GET_PROPERTY_DATA_ERROR,
   GET_PROPERTY_DATA_SUCCESS,
+  REMOVE_PROPERTY,
 } from "../lang/constants";
 
 const initialState = {
@@ -33,6 +35,22 @@ export const appReducer = (state = initialState, action) => {
         loading: false,
         hasError: true,
       };
+    case ADD_PROPERTY:
+      let newAddedItem = state.resultProperties.find(
+        (item) => item.id === action.payload
+      );
+      return {
+        ...state,
+        savedProperties: [...state.savedProperties, newAddedItem]
+      };
+    case REMOVE_PROPERTY:
+      let itemToRemove = state.savedProperties.filter(
+        (item) => item.id !== action.payload
+      );
+      return {
+        ...state,
+        savedProperties: itemToRemove
+      }; 
     default:
       return state;
   }

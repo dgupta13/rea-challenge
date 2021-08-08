@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledResultColumn = styled.div`
+export const StyledList = styled.div`
    & > div {
     flex-direction: column;
     padding: 10px;
